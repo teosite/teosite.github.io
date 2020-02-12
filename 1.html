@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title>«ТЭО»-Консалтинговая компания</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="favicon.ico"/>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;
+background-color:rgb(255,240,231);
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:1;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img style="width:50%" src="image5.png">
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Главная</a> 
+    <a href="#predslov" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Предисловие</a> 
+    <a href="#strucgrup" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Структура группы</a> 
+    <a href="#haracgrup" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Характеристика</a> 
+    <a href="#Typicalbizproects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Типовые Проекты</a>
+    <a href="#bissteam" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Бизнес-Команда</a> 
+    <a href="#bissmod" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Бизнес-Модель</a>
+    <a href="#stratkanva" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Канва ТЭО</a>
+    <a href="#etapusl" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Этапы услуг</a>
+    <a href="#vyborusl" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Выбрать услугу</a>
+    <a href="#portfol" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Портфолио</a>
+    <a href="#photo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Фотоотчет</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Контакты</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-large ">
+  <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  <span>«ТЭО»</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Главная -->
+  <div class="w3-row-padding" style="margin-top:40px">
+  <h1 class="w3-center w3-text-teal w3-margin-bottom">Консалтинговая компания <abbr title="Техэкономоптим">"ТЭО"</abbr></h1>
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="image013.jpg" style="width:100%" alt="Avatar">
+            <h3 class="w3-text-teal w3-margin-left">Тютюшкин Игорь Николаевич</h3>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Директор <abbr title="ТОВ Техэкономоптим">"ТЭО"</abbr>, Бизнес-консультант</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Киев, ул.Жилянская 59, офис 1219</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>tim@teo.kiev.ua</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>0674436385</p>
+        </div> 
+       </div>   
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Краткая информация</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Специализация</b></h5>
+          <p>С 1999 г осуществляет деятельность по бизнес-планированию, управлению консультационными проектами, разработке стратегий.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Результат</b></h5>
+          <p>Успешно разработано более 200 проектов для коммерческих, государственных и коммунальных предприятий Украины, России, Польши, Греции, Австрии и Таджикистана. Более 70 проектов были  профинансированы ЕБРР и МБРР.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Качество</b></h5>
+          <p>Сертификат EBRD BAS по управлению консалтинговыми проектами, бизнес-диагностике и сертификат MDF по управлению, направленному на результат. </p><br>
+        </div>
+      </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+
+  <!-- predslov -->
+  <div class="w3-container" id="predslov" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Предисловие</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p><strong>Уважаемые партнеры</strong>, этим обращением стремлюсь вовлечь Вас в бизнес-развитие, осведомить о возможностях, а также отобразить Вам ожидаемый результат от нашей совместной деятельности.</p>
+    <p><strong>Цель</strong> – поиск партнера для улучшения Вашего бизнеса, объединение усилий по эффективной  реализации бизнес-проектов, которые мы развиваем и предлагаем для Вас.</p>
+    <p><strong>Результат</strong> – успешный бизнес,  выведенный за 3-5 лет на максимальную EBITDA (операционную прибыль) и готовый к продаже стратегическому инвестору с целью создания новых направлений.</p>
+    <p><strong>Инструменты</strong> – инновационные идеи, апробированные бизнес-модели, успешные бизнес-команды и синергия – это основные «пазлы» бизнеса, которые мы используем.</p>
+    
+    <ul class="w3-ul w3-small w3-card-4">
+      <li class="w3-blue"><strong>Этапы реализации Проекта:</strong></li>
+      <li>1. Отбор инновационных идей от инициативных авторов и заявок от активных инвесторов;</li>
+      <li>2. Использование готовых шаблонов и форм партнерства;</li>
+      <li>3. Подбор бизнес-команды и ее обучение через проведение стратегических сессий для построения бизнес-модели, разработки бизнес-плана и формирования плана управления;</li>
+      <li>4. Воплощение бизнес-модели – организационные взаимоотношения и коммуникации с заинтересованными сторонами, решения по инвестированию ресурсов (инвестиции, кредит, гранты, краудфандинг и пр.) для создания ключевых активов, а также формирование потока доходов, расходов и стратегии ценообразования для прибыльности бизнеса;</li>
+      <li>5. Мониторинг плана управления проекта, внесение корректив, реагирование на риски внешней среды и оценка бизнеса;</li>
+      <li>6. Подготовка «тизера», проведение «роуд шоу» перед стратегическими инвесторами и сопровождение «дью-дилидженс» перед продажей бизнеса.</li>
+    </ul> 
+
+  </div>
+   <!-- Cтруктура группы -->
+  <div class="w3-container" id="strucgrup" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Cтруктура группы</b></h1>
+    <hr style="width:50px;border:3px solid green" class="w3-round">
+    <div class="w3-row">
+      <div class="w3-quarter w3-grayscale w3-container">
+        <h3>Авторы<br> проектов/<br> Активные<br> инвесторы:</h3>
+        <img src="image002.jpg" style="width:70%;height:50%;margin:5px">
+        <img src="image010.jpg" style="width:70%;height:50%;margin:10px">
+      </div> 
+      <div class="w3-quarter w3-container">
+        <h3>Бизнес-<br>консалтинг/<br> Управление<br> Проектами:</h3>
+        <img src="image00.gif" style="width:70%;height:50%; margin:10px">
+        <img src="image005.png" style="width:70%;height:50%;margin:10px">
+        <img src="image007.jpg" style="width:70%;height:50%;margin:10px">
+        <img src="image006.jpg" style="width:70%;height:50%;margin:10px">  
+      </div> 
+      <div class="w3-quarter w3-container">
+        <h3>Оценка<br> бизнеса/<br> Дью-<br>дилидженс/HR:</h3>
+        <img src="image004.png" style="width:80%;height:80%;margin:10px">
+        <img src="image009.png" style="width:80%;height:80%;margin:10px">
+        <img src="image008.png" style="width:80%;height:80%;margin:10px">
+      </div> 
+      <div class="w3-quarter w3-container">
+        <h3>Авторы<br> проектов/<br>Бизнес-<br>Проекты:</h3>
+        <img src="image003.jpg" style="width:90%;height:150%;margin:10px">
+        <img src="logo_p.png" style="width:80%;height:100%;margin:10px">
+        <img src="geofip2.png" style="width:60%;height:40%;margin:10px">
+      </div>  
+    </div>
+  </div>
+
+
+  <!--Характеристика группы -->
+  <div class="w3-container" id="haracgrup" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Характеристика группы</b></h1>
+    <hr style="width:50px;border:3px solid green" class="w3-round">
+    <p><strong style="color:blue">ООО «Техэкономоптим»</strong> (консалтинговая компания <b>«ТЭО»</b> - <a style="color:green" href="http://www.teo.kiev.ua/" target="_blank">www.teo.kiev.ua</a>) – с 1999 года предоставляет услуги по разработке инновационных стратегий, бизнес-моделей, бизнес-планов, управлению проектами, энергосбережению, а также привлечению финансирования.</p>
+    <p><strong style="color:blue">ООО «Евроконсалтинг» </strong>(<a style="color:green" href="http://www.ek-ua.com/" target="_blank">www.ek-ua.com</a>)– с 2003 года предоставляет услуги в Украине и в Западной Европе по стратегическому планированию, управлению проектами, бизнес-симуляции Simformer (<a style="color:green" href="http://www.simformer.com/" target="_blank">www.simformer.com</a>).</p>
+    <p><strong style="color:blue">Немецкая компания  TWL ContradoGmbH </strong>(<a style="color:green" href="http://www.twl-online.de/" target="_blank">www.twl-online.de</a>) занимается привлечением инвестиций в стартап проекты и сопровождением выхода иностранных компаний на украинский рынок, развитием экспорта.</p>
+    <p><strong style="color:blue">Общественная организация «Ассоциация «Частные инвесторы Украины» </strong>(<a style="color:green" href="http://www.uaban.org/" target="_blank">www.uaban.org</a>)– с 2007 года впервые в Украине объединила более 300 частных инвесторов по финансированию стартап проектов.</p>
+    <p><strong style="color:blue">ГП «Центр развития государственно-частного партнерства»</strong> (<a style="color:green" href="http://www.center-dpp.com.ua/" target="_blank">www.center-dpp.com.ua</a>)– с 2010 года оказывает содействие муниципалитетам (более 2 500 проектов) в привлечении инвестиций с целью комплексной модернизации и повышения энергетической эффективности жилищно-коммунальной отрасли Украины.</p>
+    <p><strong style="color:blue">Фирма MVP LegalGroup</strong> (<a style="color:green" href="http://www.mvplegalgroup.com/" target="_blank">www.mvplegalgroup.com</a>) – с 2010 года оказывает правовую помощь в разрешении споров, корпоративного и налогового права, земельного права, банковского и финансового права, слиянии и поглощении, антимонопольного и конкурентного права, реструктуризации и банкротства, трудового права.</p>
+    <p><strong style="color:blue">ООО «Э.Р.С.Т.Е.»</strong> (<a style="color:green" href="http://www.erste.kiev.ua/" target="_blank">www.erste.kiev.ua</a>) – с 2011 года осуществляет оценку активов и бизнеса.</p>
+    <p><strong style="color:blue">TridentSoftLab</strong> (<a style="color:green" href="http://www.tridentsoftlab.com/" target="_blank">www.tridentsoftlab.com</a>)– с 2011 года осуществляет подбор и обучение IT бизнес-команд.</p>
+  </div>
+
+
+
+  <!--Типовые Бизнес-Проекты -->
+  <div class="w3-container" id="Typicalbizproects" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Типовые Бизнес-Проекты</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <p><strong>Для реализации проектов по развитию и внедрению экологически чистых технологий консалтинговой компанией <b style="color:blue">«ТЭО»</b> совместно с инвесторами были разработаны и реализованы следующие типовые Бизнес-Проекты, которые предлагаются для тиражирования и масштабирования:</strong></p>
+    <div class="w3-card-4" style="width:90%;">
+      <header class="w3-container w3-blue">
+        <h3>Бизнес-Проект POLVAX© (<a class="w3-large" href="http://www.polvax-ukraine.com/" target="_blank">www.polvax-ukraine.com</a>)</h3>
+      </header>
+      <div class="w3-container">
+        <p>производство и оптовая продажа оборудования для систем отопления, охлаждения, снятия конденсата.</p>
+      </div>  
+    </div>
+
+    <div class="w3-card-4" style="width:90%;">
+      <header class="w3-container w3-blue">
+        <h3>Бизнес-Проект Pyrolysis©  (<a class="w3-large" href="http://www.pyrolys.net/" target="_blank">www.pyrolys.net</a>)</h3>
+      </header>
+      <div class="w3-container">
+        <p>производство и установка мусороперерабатывающих комплексов с использованием технологии непрерывного пиролиза. </p>
+      </div>  
+    </div>
+
+    <div class="w3-card-4" style="width:90%;">
+      <header class="w3-container w3-blue">
+        <h3>Бизнес-Проект Geofip© (<a class="w3-large" href="http://www.geofip.com.ua/" target="_blank">www.geofip.com.ua</a>)</h3>
+      </header>
+      <div class="w3-container">
+        <p>производство геополимерных красок, покрытий и клея как инновационное технологическое решение в отрасли современного строительства</p>
+      </div>  
+    </div>
+    <p style="font-family:verdana;">Бизнес-Проекты созданы с учетом использования уникальных инновационных украинских разработок, проинвестированы украинским капиталом и имеют большой экспортный потенциал.</p>
+  </div>
+
+
+  <!-- Бизнес-Команда -->
+  <div class="w3-container" id="bissteam" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Бизнес-Команда</b></h1>
+    <hr style="width:50px;border:4px solid green" class="w3-round">
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-center">
+          <img src="image1022.jpg" alt="Игорь" style="width:80%; height:60%">
+      </div>
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Тютюшкин Игорь Николаевич</h3>
+          <p class="w3-opacity">финансовый эксперт, бизнес-тренер, управляющий партнер компании «ТЭО», вице-президент по работе с МФО Ассоциации «Частных инвесторов Украины»</p>
+        </div>
+      </div>
+    </div>
+
+   <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-center">
+          <img src="image1023.jpg" alt="Ирина" style="width:80%; height:60%">
+      </div>
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Ефимова Ирина Борисовна</h3>
+          <p class="w3-opacity">c 2000 г. – учредитель и главный бухгалтер, ООО «Техэкономоптим», учредитель и директор ООО «Глория-М»</p>
+        </div>
+      </div>
+    </div>
+
+     <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey w3-center">
+          <img src="image012.jpg" alt="Сергей" style="width:80%; height:60%">
+      </div>
+      <div class="w3-light-grey">
+        <div class="w3-container">
+          <h3>Десяк Сергей Викторович</h3>
+          <p class="w3-opacity">эксперт по управлению проектами, управляющий партнер компании «Евроконсалтинг», президент Ассоциации «Частных инвесторов Украины»</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Бизнес-модель -->
+  <div class="w3-container" id="bissmod" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Бизнес-Модель</b></h1>
+    <hr style="width:50px;border:3px solid green" class="w3-round">
+    <strong>Канва изменения бизнес-модели компании «ТЭО»:</strong>
+    <div class="w3-responsive" style="width:100%"> 
+      <img src="image4.png" style="width:100%; min-width:600px"> 
+    </div>
+
+     <p><strong>На примере канвы* бизнес-модели компании <b style="color:blue">ТЭО</b>, отображена стратегия инновации, полученная при использовании правила «4 действий» и изменения по концепции «Стратегии голубого океана» (У.Чан Ким).</strong></p>   
+    
+    <ul class="w3-ul w3-card-4">
+      <li class="w3-blue" style="font-family:verdana"><strong>Все действия по изменениям в бизнес-модели ТЭО направлены на:</strong></li> 
+      <li>полный учет потребностей бизнеса;</li>
+      <li>определение ключевых потребителей, налаживание повторяющихся отношений с ними;</li>
+      <li>эффективное использование ключевых активов и их нематериальная составляющая;</li>
+      <li>направленность деятельности на привлечение и обучение управлению Проектами;</li>
+      <li>создание эффективной модели постоянных доходов и снижению затрат;</li>
+      <li>постоянный мониторинг ценностного предложения и ключевых составляющих.</li>
+    </ul>
+  </div>
+
+
+  <!-- Стратегическая канва ТЭО -->
+    <div class="w3-container" id="stratkanva" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Стратегическая канва ТЭО</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  <div class w3-container>
+    <p><strong>В стратегической канве ценностное предложение (ТЭО-ЦП) отображено в сравнении с прежним (ТЭО), а также в сравнении с украинскими «фрилансерами» и международными консалтинговыми компаниями «большой 5».</strong></p>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+     <img src="Image1.png" style="width:100%; height:120%;" onclick="onClick(this)">
+    </div>
+    <div class="w3-half w3-padding-16">
+     <ul class="w3-ul w3-small w3-card-4">
+      <li class="w3-blue" style="font-family:verdana"><strong>Ценностное предложение:</strong></li> 
+      <li>снижение стоимости услуг;</li>
+      <li>уменьшение объема отчета;</li>
+      <li>сокращение сроков выполнения;</li>
+      <li>расширение допуслуг по бизнес-моделированию;</li>
+      <li>увеличение мониторинга  проектов;</li>
+      <li>дополнительное обучение персонала в командном принятии и внедрению решений.</li>
+    </ul>
+    </div>
+    </div>
+    <ul style="background-color:lightyellow">
+      <li class="w3-blue" style="font-family:verdana"><strong>Сеть создания ценности:</strong></li> 
+      <li>В процессе своей деятельности компания ТЭО взаимодействует с различными консультантами (группой) – <i><strong>сетью создания ценности</strong></i>, направленной на комплексный подход к решению поставленных задач бизнеса;</li>
+      <li>В результате взаимодействия осуществляется совместное обслуживание бизнеса при реализации Проектов;</li>
+      <li>Эта ценность делится на поиск, проектный консалтинг, финансирование и мониторинг Проектов.</li>
+    </ul>
+  </div>
+  </div>
+
+
+ <!--Этапы оказания услуг -->
+  <div class="w3-container" id="etapusl" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Этапы оказания услуг</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <b>В ходе оказания консалтинговых услуг по стратегическому развитию и подготовке обоснования для изменений, осуществляются следующие этапы прохождения контрольных точек, которые завершаются соответствующими отчетами:</b>
+    <div  style="overflow-x:auto;width:100%;"> 
+      <img src="image3.png" style="width:100%;min-width:600px"> 
+    </div>
+    <i class="w3-small">После проведения первого этапа будет предложен к рассмотрению отчет, в который необходимо внести коррективы и утвердить предложенную концепцию развития Проекта. После завершения второго этапа, с учетом материалов предоставленных заказчиком, будет подготовлен бизнес-план и отчеты по управлению Проектом. По выполнении трех этапов будет осуществлен поиск по привлечению финансирования Проекта.
+    </i>
+  </div>  
+ 
+  <!--Выбор услуги -->
+  <div class="w3-container" id="vyborusl" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Выбор услуги</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  <div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-16">Микро</li>
+        <li class="w3-padding-8">Персонал: до 10 человек</li>
+        <li class="w3-padding-8">Оборот: до 10 млн грн в год</li>
+        <li class="w3-padding-8">Финансовый анализ</li>
+        <li class="w3-padding-8">Построение бизнес-модели</li>
+        <li class="w3-padding-8">Разработка тизера и ТЭО</li>
+        <li class="w3-padding-8">Привлечение финансирования*</li>
+        <li class="w3-padding-8">Срок выполнения: 1-3 недели</li>
+        <li class="w3-padding-8">
+          <h3>10-30 тыс грн</h3>
+          <span class="w3-opacity">*+5% комиссия</span>
+        </li>
+        <li class="w3-light-grey w3-padding-16">
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue w3-padding-large w3-hover-white">Заказать</button>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">X</span>
+<form action= "post1.php" method= "POST"> 
+ 
+<p>Имя: </p><p> <input type= "text" name= "name"> </p> 
+ 
+<p>E-mail: </p><p> <input type= "text" name= "email"></p> 
+ 
+<p>Сообщение: </p><p> <textarea rows= "8" cols= "30" name= "message"></textarea></p> 
+ 
+<input type= "submit" value= "Отправить"> 
+</form>
+        </div>
+      </div>
+    </div>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-teal w3-xlarge w3-padding-16">Малый и средний</li>
+        <li class="w3-padding-8">Персонал: до 50 человек</li>
+        <li class="w3-padding-8">Оборот: до 50 млн грн в год</li>
+        <li class="w3-padding-8">Юридический и финансовый анализ</li>
+        <li class="w3-padding-8">Построение бизнес-модели и ее изменение</li>
+        <li class="w3-padding-8">Разработка бизнес-плана</li> 
+        <li class="w3-padding-8">Привлечение финансирования*</li>
+        <li class="w3-padding-8">Срок выполнения: 5-7 недель</li>
+        <li class="w3-padding-8">
+          <h3>50-75 тыс грн</h3>
+          <span class="w3-opacity">*+2% комиссия</span>
+        </li>
+        <li class="w3-light-grey w3-padding-16">
+           <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-teal w3-padding-large w3-hover-white">Заказать</button>
+    <div id="id02" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">X</span>
+          <form action= "post2.php" method= "POST"> 
+ 
+<p>Имя: </p><p> <input type= "text" name= "name1"> </p> 
+ 
+<p>E-mail: </p><p> <input type= "text" name= "email1"></p> 
+ 
+<p>Сообщение: </p><p> <textarea rows= "8" cols= "30" name= "message1"></textarea></p> 
+ 
+<input type= "submit" value= "Отправить">  
+</form>
+        </div>
+      </div>
+    </div>
+        </li>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-16">Крупный</li>
+        <li class="w3-padding-8">Персонал: более 50 человек</li>
+        <li class="w3-padding-8">Оборот: <b>></b> 50 млн грн в год</li>
+        <li class="w3-padding-8">Дью дилидженс, анализ внешней среды</li>
+        <li class="w3-padding-8">Проведение стратегической сессии</li>    
+        <li class="w3-padding-8">Разработка бизнес-планов по направлениям бизнеса</li>
+        <li class="w3-padding-8">План управления проектом</li>
+        <li class="w3-padding-8">Привлечение финансирования*</li>
+        <li class="w3-padding-8">Срок выполнения: 7-10 недель</li>
+        <li class="w3-padding-8">
+          <h3>150-250 тыс грн</h3>
+          <span class="w3-opacity">*+1% комиссия</span>
+        </li>
+        <li class="w3-light-grey w3-padding-16">
+           <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-blue w3-padding-large w3-hover-white">Заказать</button>
+    <div id="id03" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">X</span>
+          <form action= "post3.php" method= "POST"> 
+ 
+<p>Имя: </p><p> <input type= "text" name= "name2"> </p> 
+ 
+<p>E-mail: </p><p> <input type= "text" name= "email2"></p> 
+ 
+<p>Сообщение: </p><p> <textarea rows= "8" cols= "30" name= "message2"></textarea></p> 
+ 
+<input type= "submit" value= "Отправить">  
+        </div>
+      </div>
+    </div>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </div> 
+
+
+  <!-- Портфолио -->
+  <div class="w3-container" id="portfol" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Портфолио</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+    <h3 class="w3-xlarge">Перечень проектов:</h3>
+    <b>Для подтверждения компетенции в разработке стратегий  представляем ряд проектов, в развитии которых компания ТЭО принимала непосредственное участие:</b>
+    <div class="w3-responsive">
+    <table class="w3-table-all" style="width:100%">
+  <tr class="w3-blue">
+    <th class="w3-center"><br>Проект</th>
+    <th class="w3-center"><br>Период</th>
+    <th class="w3-center">Сумма<br> Проекта, тыс$</th>
+    <th class="w3-center">Источник<br> финанси-<br>рования</th>
+  </tr>
+  <tr>
+    <td>Сеть 5 кафе-кондитерских «Реприза» в г.Киев. <a href="http://www.reprisa.com/ru/" target="_blank" style="color:green">www.reprisa.com</a></td>
+    <td>2004-2007</td>
+    <td>5 000</td>
+    <td>ЕБРР, Форум</td>
+  </tr>
+  <tr>
+    <td>Реконструкция хлебозавода; Строительство мельничного комплекса; свинокомплекса с элеватором и комбикормовым заводом; Приобретение сельхозтехники в Хмельницкой обл. 
+Группа «СТИОМИ-Холдинг». <a href="http://www.kernel.ua/" target="_blank" style="color:green">www.kernel.ua</a> 
+</td>
+    <td>2003-2011</td>
+    <td>31 034</td>
+    <td>Укрэксимбанк</td>
+  </tr>
+  <tr>
+    <td>Представительство, импорт болгарских медикаментов, СП «Хмесил Лтд», г.Киев. </td>
+    <td>2004-2007</td>
+    <td>7 800</td>
+    <td>ЕБРР, Форум</td>
+  </tr>
+  <tr>
+    <td>Приобретение фармзавода в г.Днепр, ЗАО ПО «Лугафарм». 
+<a href="http://www.tabletochka.ua/manufacturers/lugafarm/" target="_blank" style="color:green">www.tabletochka.ua</a>
+</td>
+    <td>2004</td>
+    <td>5 600</td>
+    <td>Укрэксимбанк</td>
+  </tr>
+  <tr>
+    <td>Строительство склада семечки и закупка семян подсолнуха для производства подсолнечного масла и шрота. Группа «ОЛКОМ».</td>
+    <td>2004</td>
+    <td>6 276</td>
+    <td>ЕБРР, 
+АППБ АВАЛЬ
+</td> 
+  </tr>
+  <tr>
+    <td>База отдыха «Солнечная» в п.г.т. Затока, Одесская область. <a href="http://www.solnechnaya.com/" target="_blank" style="color:green">www.solnechnaya.com</a> </td>
+    <td>2005</td>
+    <td>2 000</td>
+    <td>PKO</td>
+  </tr>
+  <tr>
+    <td>Строительство элеватора, МЭЗ, собственного причала и грузового флота в г. Херсон. 
+Группа компаний «WJ».
+</td>
+    <td>2005-2006</td>
+    <td>125 798</td>
+    <td>Райффайзен Банк</td>
+  </tr>
+  <tr>
+    <td>Лизинг канадских элеваторов. НАК «Украгролизинг». <a href="http://www.ukragroleasing.com.ua/" target="_blank" style="color:green">www.ukragroleasing.com.ua</a>  </td>
+    <td>2009</td>
+    <td>138 435</td>
+    <td>EDC</td>
+  </tr>
+  <tr>
+    <td>Гостиница CITYHOTEL.<a href="http://www.cityhotel.ua/" target="_blank" style="color:green">www.cityhotel.ua</a> Ресторан «Matisse», г.Киев. <a href="http://www.matisse.com.ua/" target="_blank" style="color:green">www.matisse.com.ua</a> </td>
+    <td>2011-2012</td>
+    <td>10 000</td>
+    <td>ВТБ Банк</td>
+  </tr>
+  <tr>
+    <td>Cеть современных зернохранилищ, на 280 000 тонн зерна. Группа «ТАКО». </td>
+    <td>2012</td>
+    <td>74 200</td>
+    <td>EDC</td>
+  </tr>
+  <tr>
+    <td>Ресторан «Шарм», г.Киев.</td>
+    <td>2014</td>
+    <td>700</td>
+    <td>Инвестор</td>
+  </tr>
+  <tr>
+    <td>Загородный жилой комплекс «Уварово», г.Санкт-Петербург. <a href="http:// www.uvarovo.com/" target="_blank" style="color:green"> www.uvarovo.com</a> </td>
+    <td>2014</td>
+    <td>157 000</td>
+    <td>Инвестор</td>
+  </tr>
+  <tr>
+    <td>Горнолыжный курорт «Красная поляна», г.Санкт-Петербург. <a href="http:// www.korobitsyno.ru/" target="_blank" style="color:green">www.korobitsyno.ru</a> </td>
+    <td>2014</td>
+    <td>69 400</td>
+    <td>Инвестор</td>
+  </tr>
+  <tr>
+    <td>Реконструкция объектов теплоснабжения, г.Днепр</td>
+    <td>2015</td>
+    <td>32 700</td>
+    <td>МБРР</td>
+  </tr>
+  <tr>
+    <td>Торговый центр «Парк Таун», г.Борисполь. <a href="http://park-town.com.ua/" target="_blank" style="color:green">www.park-town.com.ua</a></td>
+    <td>2016</td>
+    <td>1 660</td>
+    <td>ПроКредит</td>
+  </tr>
+</table>
+</div>
+
+ </div>
+
+
+<!-- Фотоотчет -->
+  <div class="w3-container" id="photo" style="margin-top:75px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Фотоотчет по стратегическим сессиям, обучению и общественной деятельности</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+  <div class="w3-content w3-display-container w3-animate-opacity" style="max-width:800px">
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="1.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ПРЕСС-КОНФЕРЕНЦИЯ, СЕНТЯБРЬ 2015 ГОДА"
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-sepia w3-animate-opacity">
+      <img src="2.png" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      RTI, ИНТЕРВЬЮ:«ИНВЕСТИЦИОННЫЙ КЛИМАТ В УКРАИНЕ», ДЕКАБРЬ 2015 ГОДА 
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="3.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ФОРУМ МЕЖРЕГИОНАЛЬНОГО СОТРУДНИЧЕСТВА И ИНВЕСТИЦИЙ, МАРТ 2015 ГОДА
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="4.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ИНВЕСТИЦИОННАЯ КОНФЕРЕНЦИЯ, ОКТЯБРЬ 2014 ГОДА
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="5.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ТОРГОВО-ПРОМЫШЛЕННАЯ ПАЛАТА, ЕВРОАСОЦИАЦИЯ ДЛЯ МСП, ФЕВРАЛЬ 2016 ГОДА
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="6.jpg" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      «КРУГЛЫЙ СТОЛ"ЗЕМЕЛЬНАЯ РЕФОРМА В УКРАИНЕ: РИСКИ И ВОЗМОЖНОСТИ", ДЕКАБРЬ 2016 ГОДА
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="7.JPG" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ПРОЕКТ EAST INVEST2, ИНВЕСТИЦИИ И БИЗНЕС КЛИМАТ, АПРЕЛЬ 2017 ГОДА
+    </div>
+   </div>
+   <div class="w3-display-container mySlides w3-animate-opacity">
+      <img src="8.JPG" style="width:100%">
+    <div class="w3-display-bottomleft w3-tiny w3-container w3-padding-8 w3-white">
+      ИНСТИТУТ БАНКОВСКОГО ДЕЛА, КУРС МИНИ MBA, МАЙ 2017 ГОДА   
+    </div>
+   </div>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><b class="w3-xlarge"><</b></div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><b class="w3-xlarge">></b></div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+  </div>
+  </div>   
+
+
+  <!--Контакты -->
+  <div class="w3-container" id="contact" style="margin-top:75px; margin-bottom:40px">
+    <h1 class="w3-xxlarge w3-text-green"><b>Контакты</b></h1>
+    <hr style="width:50px;border:5px solid green" class="w3-round">
+      <div class="w3-row-padding">
+    <div class="w3-half">
+     <img src="image039.png" style="width:100%; height:120%">
+     <img src="image040.jpg" style="width:100%; height:120%">
+    </div>
+    <div class="w3-half w3-padding-16">
+     <ul class="w3-ul w3-card-4">
+      <li class="w3-blue" style="font-family:verdana"><strong>Предлагаю Вам совместно реализовать Бизнес-Проект, результатом которого станет получение конкретних идей и решений по их воплощению. Направленность взаимодействия состоит в совершенствовании бизнес-модели Вашего бизнеса:</strong></li> 
+      <li>Выявлению сильных и слабых сторон бизнеса;</li>
+      <li>Определению приоритетов развития и изменений;</li>
+      <li>Формированию командного взаимодействия от идеи до внедрения. </li>
+    </ul>
+      <p><strong>Залогом успеха Проекта является использование методов и инструментов, апробированных лучшими компаниями мира, включая Google, IBM, Ericsson, Apple, Skype и Tesla.</strong></p>
+    </div>
+    </div>
+<p><i class="w3-large">P.S. Если Вам интересно, почему инвесторы, в бизнесах которых уже опробованы стратегии и инновации, стремятся оплатить за свой счет обучение для своих партнеров, понимая необходимость укрепления своего «голубого океана» через «сеть создания ценности», обращайтесь с заявкой о включении Вашего проекта в график проведения стратегических сессий.</i></p>
+  </div>  
+ </div>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+ 
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отпрвлено!");
+            });
+    });
+});    
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-102634071-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
